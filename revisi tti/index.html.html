@@ -1,0 +1,199 @@
+<!doctype html>
+<html class="dark scroll-smooth" lang="en" style="">
+  <head></head>
+  <body
+    class="bg-[#070c1e] text-slate-100 font-sans antialiased min-h-screen selection:bg-sky-500 selection:text-white relative overflow-x-hidden"
+  >
+    <svg
+      class="inline-defs-container"
+      aria-hidden="true"
+      style="position: absolute; width: 0; height: 0; overflow: hidden"
+    ></svg>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>StudyFlow - Smart planning for focused students</title>
+    <!-- Tailwind CSS CDN with Forms & Container Queries -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              midnight: "#060a17",
+              navy: {
+                950: "#070c1e",
+                900: "#0b112c",
+                850: "#0e1738",
+                800: "#131e46",
+                700: "#1b2a5e",
+              },
+              electric: {
+                400: "#38bdf8",
+                500: "#0284c7",
+                600: "#0070f3",
+                glow: "#0091ff",
+              },
+            },
+            fontFamily: {
+              sans: [
+                "Inter",
+                "system-ui",
+                "-apple-system",
+                "BlinkMacSystemFont",
+                "Segoe UI",
+                "Roboto",
+                "sans-serif",
+              ],
+            },
+            boxShadow: {
+              "glow-cyan": "0 0 35px -5px rgba(0, 145, 255, 0.45)",
+              "glow-cyan-sm": "0 0 15px 0px rgba(0, 145, 255, 0.35)",
+              "card-border": "0 0 0 1px rgba(56, 189, 248, 0.15)",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Custom Styling for Background Grids and Glowing Contours -->
+    <style data-purpose="ambient-effects">
+      /* Subtle perspective grid lines */
+      .bg-grid-pattern {
+        background-size: 44px 44px;
+        background-image:
+          linear-gradient(
+            to right,
+            rgba(56, 189, 248, 0.04) 1px,
+            transparent 1px
+          ),
+          linear-gradient(
+            to bottom,
+            rgba(56, 189, 248, 0.04) 1px,
+            transparent 1px
+          );
+      }
+
+      /* Radial Ambient Glows */
+      .hero-glow {
+        background: radial-gradient(
+          circle at 50% 35%,
+          rgba(0, 122, 255, 0.18) 0%,
+          rgba(6, 10, 23, 0) 70%
+        );
+      }
+
+      .preview-border-glow {
+        box-shadow:
+          0 -8px 40px -4px rgba(0, 145, 255, 0.35),
+          inset 0 1px 1px 0 rgba(255, 255, 255, 0.1);
+      }
+    </style>
+
+    <!-- Ambient Hero Background Grid Overlay -->
+    <div class="absolute inset-0 bg-grid-pattern pointer-events-none z-0"></div>
+    <div class="absolute inset-0 hero-glow pointer-events-none z-0"></div>
+    <!-- BEGIN: Navigation -->
+    <header class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+      <nav class="flex items-center justify-between py-2 px-3 relative">
+        <!-- Brand Identity / Logo -->
+        <div class="flex items-center gap-3">
+          <div>
+            <span class="text-[10px] text-sky-400/80 tracking-wide"
+              >Teknik Informatika</span
+            >
+          </div>
+        </div>
+        <!-- Center Navigation Links -->
+        <div
+          class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300"
+        >
+          <a class="hover:text-white transition-colors" href="#tugas"
+            >Tugas Kuliah</a
+          >
+        </div>
+        <!-- Right Controls with beranda button & User Badge -->
+        <div class="flex items-center gap-3">
+          <a
+            class="inline-flex items-center justify-center px-7 py-3 text-base font-semibold text-white bg-sky-600 hover:bg-sky-500 rounded-xl shadow-glow-cyan hover:shadow-glow-cyan transition-all duration-200 transform hover:-translate-y-0.5"
+            href="#signup"
+            >beranda</a
+          >
+        </div>
+      </nav>
+    </header>
+    <!-- END: Navigation -->
+    <!-- BEGIN: HeroSection -->
+    <main class="relative z-10 pt-16 sm:pt-20 lg:pt-24 pb-8">
+      <div class="max-w-4xl mx-auto text-center px-4 sm:px-6">
+        <!-- Primary Headline -->
+        <h1
+          class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6"
+        >
+          Andhika prathama
+        </h1>
+        <!-- Supporting Subtitle -->
+        <p
+          class="text-base sm:text-lg text-slate-400 font-normal max-w-2xl mx-auto leading-relaxed mb-8"
+        >
+          FAKULTAS TEKNOLOGI INFOMASI
+        </p>
+        <div class="">TEKNIK INFORMATIKA</div>
+        <p></p>
+        <!-- Call to Action Controls -->
+        <div class="flex flex-col items-center justify-center gap-3.5 mb-16">
+          <a
+            class="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-[#0070f3] hover:bg-[#0081fb] rounded-lg shadow-glow-cyan transition-all duration-200 transform hover:-translate-y-0.5"
+            href="daftar materi.html"
+            id="get-started"
+          >
+            <span class="">Tugas TTI</span>
+            <svg
+              class="w-4 h-4 transition-transform group-hover:translate-x-0.5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- BEGIN: DashboardMockupPreview -->
+      <!-- Large Interactive UI Frame with vibrant electric blue boundary -->
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" id="dashboard-view">
+        <section
+          aria-label="StudyFlow Dashboard Mockup"
+          class="w-full rounded-t-2xl sm:rounded-t-3xl border-t-2 border-x-2 border-sky-400/80 bg-[#080d22] preview-border-glow overflow-hidden shadow-2xl"
+        >
+          <!-- Top Chrome / App Subheader -->
+
+          <!-- App Content Canvas with Sidebar Layout (Matching Reference) -->
+        </section>
+      </div>
+      <!-- END: DashboardMockupPreview -->
+    </main>
+    <!-- END: HeroSection -->
+    <!-- Minimal Sleek Footer matching theme -->
+    <footer
+      class="relative z-10 border-t border-sky-500/10 py-6 text-center text-xs text-slate-500"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3"
+      >
+        <span class=""
+          >© 2026 Andhika Prathama • Fakultas Teknologi Informasi - Teknik
+          Informatika</span
+        >
+        <div class="flex items-center gap-4 text-slate-400">
+          <a class="hover:text-sky-400 transition" href="#">BUDI LUHUR&nbsp;</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

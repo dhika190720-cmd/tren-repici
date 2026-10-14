@@ -1,0 +1,122 @@
+<!DOCTYPE html><html class="dark scroll-smooth" lang="en" style=""><head><meta content="web_standard" name="shell-type">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"></head><body class="bg-[#070c1e] text-slate-100 font-sans antialiased min-h-screen selection:bg-sky-500 selection:text-white relative overflow-x-hidden"><svg aria-hidden="true" class="inline-defs-container" style="position:absolute;width:0;height:0;overflow:hidden"></svg>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>StudyFlow - Smart planning for focused students</title>
+<!-- Tailwind CSS CDN with Forms & Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            midnight: '#060a17',
+            navy: {
+              950: '#070c1e',
+              900: '#0b112c',
+              850: '#0e1738',
+              800: '#131e46',
+              700: '#1b2a5e',
+            },
+            electric: {
+              400: '#38bdf8',
+              500: '#0284c7',
+              600: '#0070f3',
+              glow: '#0091ff',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          },
+          boxShadow: {
+            'glow-cyan': '0 0 35px -5px rgba(0, 145, 255, 0.45)',
+            'glow-cyan-sm': '0 0 15px 0px rgba(0, 145, 255, 0.35)',
+            'card-border': '0 0 0 1px rgba(56, 189, 248, 0.15)',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styling for Background Grids and Glowing Contours -->
+<style data-purpose="ambient-effects">
+    /* Subtle perspective grid lines */
+    .bg-grid-pattern {
+      background-size: 44px 44px;
+      background-image: 
+        linear-gradient(to right, rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(56, 189, 248, 0.04) 1px, transparent 1px);
+    }
+    
+    /* Radial Ambient Glows */
+    .hero-glow {
+      background: radial-gradient(circle at 50% 35%, rgba(0, 122, 255, 0.18) 0%, rgba(6, 10, 23, 0) 70%);
+    }
+
+    .preview-border-glow {
+      box-shadow: 0 -8px 40px -4px rgba(0, 145, 255, 0.35), inset 0 1px 1px 0 rgba(255, 255, 255, 0.1);
+    }
+  </style>
+<!-- Ambient Hero Background Grid Overlay -->
+<div class="absolute inset-0 bg-grid-pattern pointer-events-none z-0"></div>
+<div class="absolute inset-0 hero-glow pointer-events-none z-0"></div>
+<!-- BEGIN: Navigation -->
+<header class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+<nav class="flex items-center justify-between py-2 px-3 relative">
+<!-- Brand Identity / Logo -->
+<div class="flex items-center gap-3">
+<div>
+<span class="text-[10px] text-sky-400/80 tracking-wide">Teknik Informatika</span>
+</div>
+</div>
+<!-- Center Navigation Links -->
+<div class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+<a class="hover:text-white transition-colors" href="#tugas">Tugas Kuliah</a>
+</div>
+<!-- Right Controls with beranda button & User Badge -->
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center justify-center px-7 py-3 text-base font-semibold text-white bg-sky-600 hover:bg-sky-500 rounded-xl shadow-glow-cyan hover:shadow-glow-cyan transition-all duration-200 transform hover:-translate-y-0.5" href="beranda.html">beranda</a>
+</div>
+</nav>
+</header>
+<!-- END: Navigation -->
+<!-- BEGIN: HeroSection -->
+<main class="relative z-10 pt-16 sm:pt-20 lg:pt-24 pb-8"><div class="flex flex-col w-full"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 w-full"><div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6"><a class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-inverse-surface/60 hover:bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm shadow-sm transition-all duration-150 w-fit" href="daftar materi.html"><span class="material-symbols-outlined text-[18px]">arrow_back</span>Kembali ke Daftar Materi</a><div class="flex items-center gap-3"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container/20 text-primary-fixed text-label-xs font-label-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-pulse"></span>TREN TEKNOLOGI INFORMASI</span><span class="px-2.5 py-0.5 rounded-md bg-inverse-surface text-inverse-on-surface text-label-xs font-label-xs">2026/2027</span></div></div><div class="relative overflow-hidden rounded-2xl bg-surface-container-low/10 backdrop-blur-md p-6 sm:p-7 mb-8 shadow-xl"><div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"><div><h1 class="text-inverse-on-surface font-headline-xl text-headline-xl sm:text-[2.25rem] tracking-tight mb-2">MATERI 3</h1><p class="text-base text-slate-300 font-normal tracking-wide"></p><p class="text-base text-slate-300 font-normal tracking-wide mb-6 max-w-4xl"><div>1. Computer and Mobile Devices</div><div>Computer and mobile devices adalah berbagai perangkat yang menggunakan teknologi komputer untuk membantu manusia melakukan pekerjaan, mengolah informasi, berkomunikasi, maupun hiburan.</div><div>Contohnya:</div><div>Laptop</div><div>Tablet</div><div>Desktop/PC</div><div>Server</div><div>Smartphone</div><div>Kamera digital</div><div>E-book reader</div><div>Wearable device</div><div>Perangkat game</div><div>Embedded computer</div><div>Jadi, komputer tidak hanya berbentuk PC atau laptop. Banyak perangkat sehari-hari juga sebenarnya memiliki sistem komputer di dalamnya. TTI#3 (1).pdf</div><div>2. Mobile Computer dan Desktop</div><div>A. Mobile Computer</div><div>Mobile computer adalah komputer yang dirancang agar mudah dibawa dari satu tempat ke tempat lain.</div><div>Contohnya adalah laptop dan beberapa jenis perangkat komputer portabel lainnya.</div><div>Keuntungan utamanya adalah mobilitas. Kita dapat menggunakannya di rumah, kampus, kantor, atau tempat lainnya.</div><div>B. Personal Computer (PC)</div><div>PC adalah komputer yang dapat melakukan berbagai aktivitas sendiri, mulai dari:</div><div>Input → Processing → Output → Storage</div><div>Contohnya:</div><div>Memasukkan data menggunakan keyboard (input)</div><div>CPU mengolah data (processing)</div><div>Hasil muncul di monitor (output)</div><div>Data disimpan di SSD/HDD (storage)</div><div>PC dapat berupa komputer desktop maupun komputer bergerak. TTI#3 (1).pdf</div><div>3. Server</div><div>Server adalah komputer yang bertugas menyediakan layanan kepada komputer atau perangkat lain yang terhubung dalam jaringan.</div><div>Contoh sederhananya:</div><div>Komputer pengguna → jaringan → Server</div><div>Misalnya ketika kamu membuka sebuah website, komputer/server menyediakan data website tersebut kepada perangkatmu.</div><div>Virtualisasi</div><div>Virtualisasi adalah teknik untuk membagi atau menggabungkan sumber daya komputasi.</div><div>Dalam virtualisasi server, satu server fisik dapat digunakan untuk menjalankan beberapa server virtual.</div><div>Server Farm</div><div>Server farm adalah kumpulan beberapa server yang ditempatkan di satu lokasi. TTI#3 (1).pdf</div><div>4. Terminal</div><div>Terminal adalah komputer atau perangkat yang biasanya memiliki kemampuan pemrosesan terbatas dan digunakan untuk mengirim atau menerima informasi dari server/komputer host. TTI#3 (1).pdf</div><div>Ada beberapa contoh penting:</div><div>Thin Client</div><div>Komputer yang bentuknya mirip desktop tetapi memiliki komponen dan kemampuan pemrosesan yang terbatas.</div><div>ATM</div><div>ATM (Automated Teller Machine) adalah terminal perbankan swalayan.</div><div>Contohnya digunakan untuk:</div><div>Mengambil uang</div><div>Mengecek informasi rekening</div><div>Melakukan transaksi perbankan tertentu</div><div>ATM terhubung dengan komputer host melalui jaringan.</div><div>Kios Swalayan</div><div>Kios swalayan adalah terminal mandiri yang biasanya menggunakan layar sentuh agar pengguna dapat berinteraksi dengan sistem. TTI#3 (1).pdf</div><div>5. Supercomputer</div><div>Supercomputer atau superkomputer adalah komputer yang memiliki kemampuan pemrosesan sangat tinggi.</div><div>Menurut materi, superkomputer merupakan komputer yang paling cepat, paling kuat, dan paling mahal, serta mampu memproses banyak triliunan instruksi dalam satu detik. TTI#3 (1).pdf</div><div>Jadi, superkomputer bukan ditujukan untuk penggunaan sehari-hari seperti mengetik atau bermain game biasa, tetapi untuk pekerjaan yang membutuhkan kemampuan komputasi sangat besar.</div></p><p dir="auto" data-start="1338" data-end="1361" style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; color: rgb(220, 225, 251); font-family: &quot;Be Vietnam Pro&quot;, &quot;Noto Sans&quot;, sans-serif; font-size: medium; letter-spacing: normal;" class=""></p><ul data-start="1514" data-end="1758" style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; color: rgb(220, 225, 251); font-family: &quot;Be Vietnam Pro&quot;, &quot;Noto Sans&quot;, sans-serif; font-size: medium; letter-spacing: normal;"></ul><ul data-start="1788" data-end="2031" style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; color: rgb(220, 225, 251); font-family: &quot;Be Vietnam Pro&quot;, &quot;Noto Sans&quot;, sans-serif; font-size: medium; letter-spacing: normal;"></ul><ul data-start="2107" data-end="2330" style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; color: rgb(220, 225, 251); font-family: &quot;Be Vietnam Pro&quot;, &quot;Noto Sans&quot;, sans-serif; font-size: medium; letter-spacing: normal;"></ul><ul data-start="2740" data-end="3162" style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; color: rgb(220, 225, 251); font-family: &quot;Be Vietnam Pro&quot;, &quot;Noto Sans&quot;, sans-serif; font-size: medium; letter-spacing: normal;"></ul><ul data-start="3199" data-end="3617" style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; color: rgb(220, 225, 251); font-family: &quot;Be Vietnam Pro&quot;, &quot;Noto Sans&quot;, sans-serif; font-size: medium; letter-spacing: normal;"></ul><p dir="auto" data-start="204" data-end="292" class="PDq2pG_selectionAnchorContainer cursor-text" spellcheck="false" data-stitch-added-classes="cursor-text" style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; color: rgb(220, 225, 251); font-family: &quot;Be Vietnam Pro&quot;, &quot;Noto Sans&quot;, sans-serif; font-size: medium; letter-spacing: normal;"></p><p></p></div></div></div><div class="w-full flex flex-col gap-6"></div></div></div>
+<script>
+  // Simple file selection reflection micro-interaction
+  const fileInput = document.getElementById('pdf-input');
+  const fileLabel = document.getElementById('file-label');
+  if (fileInput && fileLabel) {
+    fileInput.addEventListener('change', function(e) {
+      if (e.target.files && e.target.files[0]) {
+        fileLabel.innerHTML = '<span class="text-secondary-fixed font-medium">' + e.target.files[0].name + '</span> (' + (e.target.files[0].size / (1024*1024)).toFixed(2) + ' MB)';
+      }
+    });
+  }
+</script></main>
+<!-- END: HeroSection -->
+<!-- Minimal Sleek Footer matching theme -->
+<footer class="relative z-10 border-t border-sky-500/10 py-6 text-center text-xs text-slate-500">
+<div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+<span class="">© 2026 Andhika Prathama • Fakultas Teknologi Informasi - Teknik Informatika</span>
+<div class="flex items-center gap-4 text-slate-400">
+<a class="hover:text-sky-400 transition" href="#">BUDI LUHUR&nbsp;</a>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
